@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 
 import info.androidhive.slidingmenu.R;
 
-public class FindPeopleFragment extends Fragment {
+public class Desktop extends Fragment {
 	
-	public FindPeopleFragment(){}
+	public Desktop(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

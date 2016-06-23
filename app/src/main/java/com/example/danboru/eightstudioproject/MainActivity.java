@@ -24,13 +24,13 @@ public class MainActivity extends Activity {
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
 
-    // nav drawer title
+    // judul dari nav drawer
     private CharSequence mDrawerTitle;
 
     // used to store app title
     private CharSequence mTitle;
 
-    // slide menu items
+    // slide menu items nya
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
 
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         // load slide menu items
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
 
-        // nav drawer icons from resources
+        // pengambilan nav drawer icons dari resources
         navMenuIcons = getResources()
                 .obtainTypedArray(R.array.nav_drawer_icons);
 
@@ -56,19 +56,31 @@ public class MainActivity extends Activity {
 
         navDrawerItems = new ArrayList<NavDrawerItem>();
 
-        // adding nav drawer items to array
+        // penambahan nav drawer items to array
+
         // Home
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
+
         // Find People
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
+
         // Photos
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
+
         // Communities, Will add a counter here
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
+
         // Pages
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
+
         // What's hot, We  will add a counter here
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1)));
+
+        //Headset
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1)));
+
+        //bisa di buat seperti ini untuk menampilkan notifikasi
+        //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, ""));
 
 
         // Recycle the typed array
@@ -163,22 +175,25 @@ public class MainActivity extends Activity {
         Fragment fragment = null;
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
+                fragment = new Home();
                 break;
             case 1:
-                fragment = new FindPeopleFragment();
+                fragment = new Desktop();
                 break;
             case 2:
-                fragment = new PhotosFragment();
+                fragment = new Motherboard();
                 break;
             case 3:
-                fragment = new CommunityFragment();
+                fragment = new GraphicCard();
                 break;
             case 4:
-                fragment = new PagesFragment();
+                fragment = new Monitor();
                 break;
             case 5:
-                fragment = new WhatsHotFragment();
+                fragment = new Keyboard();
+                break;
+            case 6:
+                fragment = new HeadSet();
                 break;
 
             default:

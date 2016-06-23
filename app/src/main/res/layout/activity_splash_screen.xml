@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.danboru.eightstudioproject.SplashScreen">
+    tools:context="com.example.danboru.eightstudioproject.splash.SplashScreen">
 
 
     <LinearLayout

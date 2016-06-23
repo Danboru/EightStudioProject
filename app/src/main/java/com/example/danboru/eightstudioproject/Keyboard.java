@@ -8,15 +8,16 @@ import android.view.ViewGroup;
 
 import info.androidhive.slidingmenu.R;
 
-public class CommunityFragment extends Fragment {
+public class Keyboard extends Fragment {
 	
-	public CommunityFragment(){}
+	public Keyboard(){}
+	
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_community, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_whats_hot, container, false);
          
         return rootView;
     }
