@@ -14,7 +14,14 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="AppCostumeThemes">
+
+        <item name="android:background">#535252</item>
+        <item name="android:textColor">#fff</item>
+
     </style>
 
 </resources>
