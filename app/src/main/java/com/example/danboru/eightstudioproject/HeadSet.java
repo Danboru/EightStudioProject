@@ -1,6 +1,5 @@
 package com.example.danboru.eightstudioproject;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +14,7 @@ public class HeadSet extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_community, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_grapichcard, container, false);
 
         return rootView;
     }
