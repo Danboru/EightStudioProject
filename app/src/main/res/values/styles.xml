@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="normalStyle">
+
+        <item name="android:text">Test</item>
+
+    </style>
+
+    <style name="SplashScreen">
+
+        <item name="android:background">#000000</item>
+
+    </style>
+
+    <style name="UkuranGambarSplash">
+
+        <item name="android:width">100dp</item>
+        <item name="android:height">100dp</item>
+
+    </style>
+
+
+    <style name="tampilanTombolSatu">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">#e7e7e7</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+
+    </style>
+
+</resources>
