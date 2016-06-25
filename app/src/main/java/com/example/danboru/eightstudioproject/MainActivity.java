@@ -149,27 +149,44 @@ public class MainActivity extends Activity {
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-        // Handle action bar actions click
+        // Handle action menu
         switch (item.getItemId()) {
-            case R.id.action_settings:
 
-                Toast.makeText(MainActivity.this, "Berhasil", Toast.LENGTH_SHORT).show();
+            case R.id.rate_thisapp: {
 
+                Toast.makeText(MainActivity.this, "Rate Apps", Toast.LENGTH_SHORT).show();
                 return true;
-            default:
+            }
+
+            case R.id.about: {
+
+                Toast.makeText(MainActivity.this, "About", Toast.LENGTH_SHORT).show();
+                return true;
+
+            }
+
+            default: {
                 return super.onOptionsItemSelected(item);
+            }
+
+
         }
     }
 
 
     /* *
-     * Called when invalidateOptionsMenu() is triggered
+     * Tambah Action Menu res/drawable/menu/main
      */
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
+
         // if nav drawer is opened, hide the action items
         boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
+
+        menu.findItem(R.id.rate_thisapp).setVisible(!drawerOpen);
+
+        menu.findItem(R.id.about).setVisible(!drawerOpen);
+
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -177,7 +194,8 @@ public class MainActivity extends Activity {
      * Diplaying fragment view for selected nav drawer list item
      * */
     private void displayView(int position) {
-        // update the main content by replacing fragments
+
+        // update the main content dengan mengubah fragments
         Fragment fragment = null;
         switch (position) {
             case 0:
@@ -219,6 +237,7 @@ public class MainActivity extends Activity {
         } else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
+
         }
     }
 
