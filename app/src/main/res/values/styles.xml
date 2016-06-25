@@ -19,7 +19,7 @@
 
     <style name="AppCostumeThemes">
 
-        <item name="android:background">#535252</item>
+        <item name="android:background">#e1e1e1</item>
         <item name="android:textColor">#fff</item>
 
     </style>
